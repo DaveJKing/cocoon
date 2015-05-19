@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 gem 'cocoon'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'byebug'

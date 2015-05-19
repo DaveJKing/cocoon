@@ -46,18 +46,17 @@
 			<%= render 'task_fields', :f => task %>
 			<% end %>
 
-			
-			<div class="links">
-				<%= link_to_add_association 'Add task', f, :tasks %>
+			<div class="well">
+				<div class="links">
+					<%= link_to_add_association 'Add task', f, :tasks,  class:"btn  btn-info" %>
+				</div>
 			</div>
 			
 		</div>
 		
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<button  class="btn btn-default">
-					<%= f.submit %>
-				</button>
+				 <%= f.submit "Save Amendments", class: "btn btn-default" %>
 			</div>
 		</div>
 
