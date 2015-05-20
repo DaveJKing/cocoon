@@ -42,14 +42,14 @@
        
 		<div id="tasks" class="col-sm-offset-3">
 
-			<%= f.fields_for :tasks do |task| %>
+			
+			
 			<%= render 'task_fields', :f => task %>
-			<% end %>
+			
 
 			<div class="well">
 				<div class="links">
 					<%= link_to_add_association 'Add task', f, :tasks,  data: {toggle: "modal", target: "#myModal"} %>
-			
 				</div>
 			</div>
 			
@@ -65,32 +65,7 @@
 </div>
 
 
-!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-      	
-      	<div class="form-group">
-		<label class="col-sm-2 control-label">Description</label>
-		<div class="col-sm-5">
-			<%= f.text_field :description, class: "form-control" %>
-		</div>
-	</div>
 
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
