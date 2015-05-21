@@ -43,16 +43,16 @@
 		<div id="tasks" class="col-sm-offset-3">
 
 			
+			<%= render 'task_fields'%>
 			
-			<%= render 'task_fields', :f => task %>
-			
-
 			<div class="well">
 				<div class="links">
-					<%= link_to_add_association 'Add task', f, :tasks,  data: {toggle: "modal", target: "#myModal"} %>
+					<%= link_to_add_association 'Add task', f, :tasks,  class:"btn btn-info",  data: {toggle: "modal", target: "#myModal"} %>
 				</div>
 			</div>
 			
+			
+			<%= link_to 'Click Here', "#", data: {toggle: "modal", target: "#myModal"} %>
 		</div>
 		
 		<div class="form-group">
@@ -65,9 +65,10 @@
 </div>
 
 
-
-
-
-
-
 <% end %>
+
+
+<!-- Modals here -->
+
+
+
